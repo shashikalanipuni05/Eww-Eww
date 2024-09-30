@@ -18,12 +18,45 @@ const tes = `┌─────────────────────�
 ├ 🦄  *Owner:-* *DanuXzz ジ*
 ├ 💠  *Version:-* 1.0.0
 └───────────────────────`
+    let buttons = [
+      {
+          name: "quick_reply",
+          buttonParamsJson: JSON.stringify({
+              display_text: "ALIVE",
+              id: ".alive"
+          }),
+      },
+      {
+        name: "quick_reply",
+        buttonParamsJson: JSON.stringify({
+            display_text: "MENU",
+            id: ".menu"
+        }),
+    },
 
+    
+    ]
+    
+    let message = {
+        image: config.LOGO,
+      header: '',
+      footer: config.FOOTER,
+      
+    
+    
+      body: txt
+    
+    }
+    
+    
+    
+    
+    
+    
+    return await conn.sendButtonMessage(from, buttons, m, message)
+    } catch (e) {
+        reply('*Error !!*')
+        console.log(e)
+    }
+    })
  
-await conn.sendMessage(from, { image: { url: config.ALIVE_IMG }, caption: tes }, { quoted: mek, messageId:genMsgId() })
-} catch (e) {
-reply('*Error !!*')
-l(e)
-}
-})
-
