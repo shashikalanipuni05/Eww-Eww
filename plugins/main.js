@@ -17,7 +17,7 @@ const {
 } = require('../lib/functions')
 cmd({
         pattern: "alive",
-        react: "🍬",
+        react: "👻",
         alias: ["online", "test", "bot"],
         desc: "Check bot online or no.",
         category: "other",
@@ -36,16 +36,16 @@ cmd({
             else if (os.hostname().length == 8) hostname = 'koyeb'
             else hostname = os.hostname()
             let monspace = '```'
-            const sssf = `${monspace}👋 Hello ${pushname} I'm alive now${monspace}
+            const sssf = `${monspace}💗 Hello ${pushname} I'm alive now${monspace}
 
-*💩DARK SHUTER - MD*
+*😼ＫＥＮＺＩ-ＭＤ🤍*
     
-> *Version:* ${require("../package.json").version}
+> *ɴᴀᴍᴇ ʙᴏᴛ* : Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ2
+> *ᴠᴇʀsɪᴏɴs* : ${require("../package.json").version}
+> *ᴛʏᴘᴇ sᴄʀɪᴘᴛ* : ᴘʟᴜɢɪɴs
 > *Memory:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 > *Runtime:* ${runtime(process.uptime())}
-> *Platform:* ${hostname}
-    
-*🍭 Have A Nice Day 🍭*`
+> *Platform:* ${hostname}`
 
             let buttons = [{
                     name: "cta_url",
@@ -79,7 +79,7 @@ cmd({
 
 cmd({
         pattern: "ping",
-        react: "📍",
+        react: "🧬",
         alias: ["speed"],
         desc: "Check bot\'s ping",
         category: "other",
@@ -107,7 +107,7 @@ cmd({
 
 cmd({
         pattern: "menu",
-        react: "🗄️",
+        react: "📃",
         alias: ["panel", "list", "commands"],
         desc: "Get bot\'s command list.",
         category: "other",
@@ -125,11 +125,14 @@ cmd({
             else if (os.hostname().length == 8) hostname = 'koyeb'
             else hostname = os.hostname()
             let monspace = '```'
-            const MNG = `${monspace}👋 Hello ${pushname}${monspace}
+            const MNG = `࿏ ͝ ꒷ ͝ ࿏ ͝ ꒷ ͝ ࿏ ͝ ꒷ ͝ ࿏ ͝ ꒷ ͝ ࿏ ͝ ꒷ ͝ ࿏ ͝ ꒷ ͝ ࿏
+        
+👋 *ʜɪ* ${pushname} ,
+◦ ɪ ᴀᴍ ᴀɴ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ꜱʏꜱᴛᴇᴍ ⚡ *(ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ)* ᴛʜᴀᴛ ᴄᴀɴ ʜᴇʟᴘ ᴛᴏ ᴅᴏ ꜱᴏᴍᴇᴛʜɪɴɢ, ꜱᴇᴀʀᴄʜ ᴀɴᴅ ɢᴇᴛ ᴅᴀᴛᴀ / ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴏɴʟʏ ᴛʜʀᴏᴜɢʜ *ᴡʜᴀᴛꜱᴀᴘᴘ* .🌐
 
-*💩DARK SHUTER - MD command panel...*
-  
-> *Version:* ${require("../package.json").version}
+> *ɴᴀᴍᴇ ʙᴏᴛ* : Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ2
+> *ᴠᴇʀsɪᴏɴs* : ${require("../package.json").version}
+> *ᴛʏᴘᴇ sᴄʀɪᴘᴛ* : ᴘʟᴜɢɪɴs
 > *Memory:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 > *Runtime:* ${runtime(process.uptime())}
 > *Platform:* ${hostname}`
@@ -148,7 +151,7 @@ let buttons = [{
                  "sections":
                    [{
                     "title":"SELECT MENU",
-                    "highlight_label":"BLACK PANTHER-MD",
+                    "highlight_label":"KENZI-MD",
                     "rows":[
                       
                     {
@@ -180,6 +183,12 @@ let buttons = [{
                        "title":"OWNER MENU",
                        "description":"Owner menu",
                        "id":".ownermenu"
+                       },
+                       {
+                       "header":"",
+                       "title":"ANIME MENU",
+                       "description":"Search Anime menu",
+                       "id":".animemenu"
                        }
 
 
@@ -228,7 +237,7 @@ let buttons = [{
     
     cmd({
         pattern: "allmenu",
-        react: "🧬",
+        react: "⛓️",
         alias: ["status"],
         desc: "Check bot system status.",
         category: "genaral",
@@ -241,20 +250,20 @@ let buttons = [{
     
     const rtime = await runtime(process.uptime())
     
-    const txt =`💠Command : alive
-💭Desc : Check bot online or no.
+    const txt =`🪙Command : alive
+📝Desc : Check bot online or no.
 ☘Use: .alive
 
-💠Command : sc
-💭Desc : Get bot's command list.
+🪙Command : sc
+📝Desc : Get bot's command list.
 ☘Use: .sc
 
-💠Command : menu
-💭Desc : Get bot's command list.
+🪙Command : menu
+📝Desc : Get bot's command list.
 ☘Use: .menu
 
-💠Command : menu2
-💭Desc : Get bot's command list.
+🪙Command : menu2
+📝Desc : Get bot's command list.
 ☘Use: .menu`
     
     let buttons = [
@@ -314,21 +323,33 @@ let buttons = [{
     
     const rtime = await runtime(process.uptime())
     
-    const txt =`💠Command : alive
-💭Desc : Check bot online or no.
-☘Use: .alive
+    const txt =`🪙Command : song
+📝Desc : Get song you like.
+☘Use: .song
 
-💠Command : sc
-💭Desc : Get bot's command list.
-☘Use: .sc
+🪙Command : video
+📝Desc : Get video you like.
+☘Use: .video
 
-💠Command : menu
-💭Desc : Get bot's command list.
-☘Use: .menu
+🪙Command : apk
+📝Desc : Get apk you want.
+☘Use: .apk
 
-💠Command : menu2
-💭Desc : Get bot's command list.
-☘Use: .menu`
+🪙Command : fb
+📝Desc : Get facebook video/audio.
+☘Use: .fb
+
+🪙Command : tt
+📝Desc : Get tiktok video/audio.
+☘Use: .tt
+
+🪙Command : ig
+📝Desc : Get instagram video/audio.
+☘Use: .ig
+
+🪙Command : mediafire
+📝Desc : Get mediafire downloads.
+☘Use: .mediafire`
     
     let buttons = [
       {
@@ -388,20 +409,20 @@ let buttons = [{
     
     const rtime = await runtime(process.uptime())
     
-    const txt =`💠Command : alive
-💭Desc : Check bot online or no.
-☘Use: .alive
+    const txt =`🪙Command : img
+📝Desc : Search Img You want.
+☘Use: .img
 
-💠Command : sc
-💭Desc : Get bot's command list.
-☘Use: .sc
+🪙Command : yts
+📝Desc : You can get Youtube Video Description.
+☘Use: .yts
 
-💠Command : menu
-💭Desc : Get bot's command list.
+🪙Command : menu
+📝Desc : Get bot's command list.
 ☘Use: .menu
 
-💠Command : menu2
-💭Desc : Get bot's command list.
+🪙Command : menu2
+📝Desc : Get bot's command list.
 ☘Use: .menu`
     
     let buttons = [
@@ -461,20 +482,20 @@ let buttons = [{
     
     const rtime = await runtime(process.uptime())
     
-    const txt =`💠Command : alive
-💭Desc : Check bot online or no.
-☘Use: .alive
+    const txt =`🪙Command : tomp3
+📝Desc : Convert video to audio.
+☘Use: .tomp3
 
-💠Command : sc
-💭Desc : Get bot's command list.
-☘Use: .sc
+🪙Command : tts
+📝Desc : Text convert to Speech..
+☘Use: .tts
 
-💠Command : menu
-💭Desc : Get bot's command list.
+🪙Command : menu
+📝Desc : Get bot's command list.
 ☘Use: .menu
 
-💠Command : menu2
-💭Desc : Get bot's command list.
+🪙Command : menu2
+📝Desc : Get bot's command list.
 ☘Use: .menu`
     
     let buttons = [
@@ -534,21 +555,109 @@ let buttons = [{
     
     const rtime = await runtime(process.uptime())
     
-    const txt =`💠Command : alive
-💭Desc : Check bot online or no.
-☘Use: .alive
+    const txt =`🪙Command : del
+📝Desc : delete massege.
+☘Use: .del
 
-💠Command : sc
-💭Desc : Get bot's command list.
+🪙Command : join
+📝Desc : Join You like groups.
 ☘Use: .sc
 
-💠Command : menu
-💭Desc : Get bot's command list.
+🪙Command : menu
+📝Desc : Get bot's command list.
 ☘Use: .menu
 
-💠Command : menu2
-💭Desc : Get bot's command list.
+🪙Command : menu2
+📝Desc : Get bot's command list.
 ☘Use: .menu`
+    
+    let buttons = [
+      {
+          name: "quick_reply",
+          buttonParamsJson: JSON.stringify({
+              display_text: "PING",
+              id: ".ping"
+          }),
+      },
+      {
+        name: "quick_reply",
+        buttonParamsJson: JSON.stringify({
+            display_text: "SYSTEM",
+            id: ".system"
+        }),
+    },
+
+    
+    ]
+    
+    let message = {
+        image: config.LOGO,
+      header: '',
+      footer: config.FOOTER,
+      
+    
+    
+      body: txt
+    
+    }
+    
+    
+    
+    
+    
+    
+    return await conn.sendButtonMessage(from, buttons, m, message)
+    } catch (e) {
+        reply('*Error !!*')
+        console.log(e)
+    }
+    })
+    cmd({
+        pattern: "animemenu",
+        react: "😽",
+        alias: ["status"],
+        desc: "Check bot system status.",
+        category: "genaral",
+        use: '.animemenu',
+        filename: __filename
+    },
+    async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants,  isItzcp, groupAdmins, isBotAdmins, isAdmins, reply,react}) => {
+    try{
+        
+    
+    const rtime = await runtime(process.uptime())
+    
+    const txt =`🪙Command : anime
+📝Desc : You can get Anime images.
+☘Use: .anime
+
+🪙Command : animeeg
+📝Desc : You Can search Animes.
+☘Use: .animeeg
+
+🪙Command : loli
+📝Desc : Anime cmd.
+☘Use: .loli
+
+🪙Command : waifu
+📝Desc : Anime cmd.
+☘Use: .waifu
+
+🪙Command : neko
+📝Desc : Anime cmd.
+☘Use: .neko
+
+🪙Command : megumin
+📝Desc : Anime cmd.
+☘Use: .megumin
+
+🪙Command : maid
+📝Desc : Anime cmd.
+☘Use: .maid
+
+🪙Command : awoo
+📝Desc : Anime cmd.
+☘Use: .awoo`
     
     let buttons = [
       {
@@ -643,7 +752,7 @@ let buttons = [{
 
 cmd({
         pattern: "del",
-        react: "🍬",
+        react: "🗡️",
         alias: ["online", "test", "bot"],
         desc: "Check bot online or no.",
         category: "other",
@@ -690,8 +799,3 @@ try{  if (!q) return reply('Please give me Query');
             console.log(e)
         }
     })
-
-
-
-
-
