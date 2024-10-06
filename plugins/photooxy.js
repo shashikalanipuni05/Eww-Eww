@@ -43,8 +43,8 @@ var sections = []
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
                         display_text: 'Join Our Channel',
-                        url: `https://whatsapp.com/channel/0029Vaa1t6l5q08V1jdCS33q`,
-                        merchant_url: `https://whatsapp.com/channel/0029Vaa1t6l5q08V1jdCS33q`
+                        url: `https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34`,
+                        merchant_url: `https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34`
                     }),
                 },
                 {
@@ -55,7 +55,7 @@ var sections = []
                     })
                 }]
 
-let msg =  `┌───[ PinkVenom-MD ]
+let msg =  `┌───[ KENZI-MD ]
 
    *PHOTOOXY LOGO 01*
 
@@ -71,7 +71,7 @@ return conn.sendButtonMessage(from, buttons, m, message)
 
 } catch (e) {
 reply(errt)
-l(e)
+console.log(e)
 }
 })
 
@@ -106,8 +106,8 @@ var sections = []
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
                         display_text: 'Join Our Channel',
-                        url: `https://whatsapp.com/channel/0029Vaa1t6l5q08V1jdCS33q`,
-                        merchant_url: `https://whatsapp.com/channel/0029Vaa1t6l5q08V1jdCS33q`
+                        url: `https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34`,
+                        merchant_url: `https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34`
                     }),
                 },
                 {
@@ -118,7 +118,7 @@ var sections = []
                     })
                 }]
 
-let msg =  `┌───[ PinkVenom-MD ]
+let msg =  `┌───[ KENZI-MD ]
 
    *PHOTOOXY LOGO 03*
 
@@ -134,7 +134,7 @@ return conn.sendButtonMessage(from, buttons, m, message)
 
 } catch (e) {
 reply(errt)
-l(e)
+console.log(e)
 }
 })
 
@@ -174,8 +174,8 @@ var sections = []
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
                         display_text: 'Join Our Channel',
-                        url: `https://whatsapp.com/channel/0029Vaa1t6l5q08V1jdCS33q`,
-                        merchant_url: `https://whatsapp.com/channel/0029Vaa1t6l5q08V1jdCS33q`
+                        url: `https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34`,
+                        merchant_url: `https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34`
                     }),
                 },
                 {
@@ -186,7 +186,7 @@ var sections = []
                     })
                 }]
 
-let msg =  `┌───[ PinkVenom-MD ]
+let msg =  `┌───[ KENZI-MD ]
 
    *PHOTOOXY LOGO 03*
 
@@ -202,7 +202,7 @@ return conn.sendButtonMessage(from, buttons, m, message)
 } else return await reply(imgmsgeew)
 } catch (e) {
 reply(errt)
-l(e)
+console.log(e)
 }
 })
 
@@ -224,7 +224,7 @@ try{
     await conn.sendMessage(from, { react: { text: '✔', key: mek.key }})
 } catch (e) {
     reply(errt)
-  l(e)
+  console.log(e)
 }
 })
 
@@ -246,7 +246,7 @@ try{
     await conn.sendMessage(from, { react: { text: '✔', key: mek.key }})
 } catch (e) {
     reply(errt)
-  l(e)
+  console.log(e)
 }
 })
 
@@ -268,6 +268,6 @@ try{
     await conn.sendMessage(from, { react: { text: '✔', key: mek.key }})
 } catch (e) {
     reply(errt)
-  l(e)
+  console.log(e)
 }
 })
