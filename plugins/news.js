@@ -42,7 +42,7 @@ ${data.result.desc}
 QUEEN KENZI WABETA NEWS`
 return await conn.sendMessage(from, { image: { url: data.result.image} , caption: info } , { quoted: mek })
 } catch (e) {
-l(e)
+console.log(e)
 }
 })
 
@@ -70,7 +70,7 @@ try{
 await conn.sendMessage(from, { react: { text: `🗞️`, key: mek.key }}) 
 } catch (e) {
 reply()
-l(e)
+console.log(e)
 }
 })       
 
@@ -95,7 +95,7 @@ let info = `*📃 Title :* ${data.result.title}
 `
 return await conn.sendMessage(from, { image: { url: data.result.images} , caption: info } , { quoted: mek })
 } catch (e) {
-l(e)
+console.log(e)
 }
 })
 
@@ -120,7 +120,7 @@ QUEEN KENZI TECH NEWS
 `
 return await conn.sendMessage(from, { image: { url: data.result.img} , caption: info } , { quoted: mek })
 } catch (e) {
-l(e)
+console.log(e)
 }
 })
 
@@ -171,7 +171,7 @@ let info = `*📃 Title :* ${data.title}
 `
 return await conn.sendMessage(from, { image: { url: data.image} , caption: info } , { quoted: mek })
 } catch (e) {
-l(e)
+console.log(e)
 }
 })
 
