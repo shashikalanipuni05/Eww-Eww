@@ -1,6 +1,6 @@
 {
    "name": "kenzi",
-   "version": "1.0.0",
+   "version": "2.0.0",
    "scripts": {
       "start": "pm2 start index.js --deep-monitoring --attach --name kenzi",
       "stop": "pm2 stop kenzi",
