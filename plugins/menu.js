@@ -62,8 +62,8 @@ cmd({
                 name: "cta_url",
                 buttonParamsJson: JSON.stringify({
                     display_text: 'Follow Our Channel',
-                    url: `https://whatsapp.com/channel/0029Vaa1t6l5q08V1jdCS33q`,
-                    merchant_url: `https://whatsapp.com/channel/0029Vaa1t6l5q08V1jdCS33q`
+                    url: `https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34`,
+                    merchant_url: `https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34`
                 }),
             },
             {
