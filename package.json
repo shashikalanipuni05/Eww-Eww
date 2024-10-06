@@ -2,8 +2,8 @@
    "name": "kenzi",
    "version": "1.0.0",
    "scripts": {
-      "start": "pm2 start index.js --deep-monitoring --attach --name pvmd",
-      "stop": "pm2 stop pvmd",
+      "start": "pm2 start index.js --deep-monitoring --attach --name kenzi",
+      "stop": "pm2 stop kenzi",
       "restart": "git pull && npm stop && npm start",
       "stash": "git stash && git stash drop"
    },
