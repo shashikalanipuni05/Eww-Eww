@@ -114,7 +114,7 @@ const conn = makeWASocket({
 		verticalLayout: 'full',
 		whitespaceBreak: true
 	})));
-		lolcatjs.fromString(chalk.cyan(figlet.textSync('MD', {
+		lolcatjs.fromString(chalk.cyan(figlet.textSync('Bot', {
 		font: 'Bloody',
 		horizontalLayout: 'full',
 		verticalLayout: 'full',
@@ -124,7 +124,7 @@ const conn = makeWASocket({
 	lolcatjs.fromString('[SERVER STARTED!!!]')
 	console.log('----------------------------------------------------')
 	console.log('----------------------------------------------------')
-	lolcatjs.fromString(chalk.cyan(figlet.textSync('Ayooh', {
+	lolcatjs.fromString(chalk.cyan(figlet.textSync('Danu', {
 		font: 'Bloody',
 		horizontalLayout: 'full',
 		verticalLayout: 'full',
