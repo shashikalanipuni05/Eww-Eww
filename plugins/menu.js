@@ -101,7 +101,7 @@ cmd({
     try {
         let wm = '*Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ2 ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀ ʙᴏᴛ*\n*ᴄʀᴇᴀᴛᴇᴅ ʙʏ • ᴅᴀɴᴜxᴢᴢ*'
         const category = q.trim().toUpperCase();
-        let commandList = `*𝄠 ${category} Command List:*\n\n`;
+        let commandList = `*〄》 ${category} Command List:*\n\n`;
 
         for (let i = 0; i < commands.length; i++) {
             const cmd = commands[i];
