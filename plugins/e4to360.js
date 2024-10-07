@@ -3,11 +3,11 @@ const { cmd, commands } = require('../command')
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson} = require('../lib/functions')
 const { Maker } = require('imagemaker.js')
 var imgmsg = "```Please give me a name !```"
-var imgmsg2 = "*Ex: .banner vihanga+ashinshana*"
-var imgmsg3 = "*Ex: .banner2 vihanga+ashinshana*"
-var imgmsg4 = "*Ex: .banner3 vihanga+ashinshana*"
-var imgmsg5 = "*Ex: .banner3 vihanga+ashinshana*"
-var imgmsg6 = "*Ex: .banner3 vihanga+ashinshana*"
+var imgmsg2 = "*Ex: .banner danu+ashinshana*"
+var imgmsg3 = "*Ex: .banner2 danu+ashinshana*"
+var imgmsg4 = "*Ex: .banner3 danu+ashinshana*"
+var imgmsg5 = "*Ex: .banner3 danu+ashinshana*"
+var imgmsg6 = "*Ex: .banner3 danu+ashinshana*"
 var desc = "It creates ephoto360 logos using 1 word.."
 var desc2 = "It creates channel banners.."
 var errt = "*I cant create this logo :(*"
@@ -18,7 +18,7 @@ cmd({
     alias: ["logo1","ephoto360","ephoto"],
     desc: desc,
     category: "logo",
-    use: '.ephoto360 ayodya vichakshana',
+    use: '.ephoto360 danupa chithsara',
     filename: __filename
 },
 async(conn, mek, m,{from, l, prefix, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -29,8 +29,8 @@ let buttons = [{
  name: "cta_url",
 buttonParamsJson: JSON.stringify({
 display_text: 'Join Our Channel',
-url: `https://whatsapp.com/channel/0029Vaa1t6l5q08V1jdCS33q`,
- merchant_url: `https://whatsapp.com/channel/0029Vaa1t6l5q08V1jdCS33q`
+url: `https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34`,
+ merchant_url: `https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34`
 }),
 },
 { name: 'single_select',
@@ -191,7 +191,7 @@ let message = {
 return conn.sendButtonMessage(from, buttons, m, message)
 } catch (e) {
 reply(errt)
-l(e)
+console.log(e)
 }
 })
 
@@ -200,7 +200,7 @@ cmd({
     alias: ["ytbanner","cover","channelbanner"],
     desc: desc2,
     category: "logo",
-    use: '.banner vihanga+yt',
+    use: '.banner danu+yt',
     filename: __filename
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -214,7 +214,7 @@ try{
     })
 } catch (e) {
     reply(errt)
-  l(e)
+  console.log(e)
 }
 })
 
@@ -223,7 +223,7 @@ cmd({
     alias: ["ytbanner2","cover2","channelbanner2"],
     desc: desc2,
     category: "logo",
-    use: '.banner2 vihanga+yt',
+    use: '.banner2 danu+yt',
     filename: __filename
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -237,7 +237,7 @@ try{
     })
 } catch (e) {
     reply(errt)
-  l(e)
+  console.log(e)
 }
 })
 
@@ -246,7 +246,7 @@ cmd({
     alias: ["ytbanner3","cover3","channelbanner3"],
     desc: desc2,
     category: "logo",
-    use: '.banner3 vihanga+yt',
+    use: '.banner3 danu+yt',
     filename: __filename
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -260,7 +260,7 @@ try{
     })
 } catch (e) {
     reply(errt)
-  l(e)
+  console.log(e)
 }
 })
 
@@ -269,7 +269,7 @@ cmd({
     alias: ["ytbanner4","cover4","channelbanner4"],
     desc: desc2,
     category: "logo",
-    use: '.banner4 vihanga+yt',
+    use: '.banner4 danu+yt',
     filename: __filename
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -283,7 +283,7 @@ try{
     })
 } catch (e) {
     reply(errt)
-  l(e)
+  console.log(e)
 }
 })
 
@@ -292,7 +292,7 @@ cmd({
     alias: ["ytbanner5","cover5","channelbanner5"],
     desc: desc2,
     category: "logo",
-    use: '.banner5 vihanga+yt',
+    use: '.banner5 danu+yt',
     filename: __filename
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -306,7 +306,7 @@ try{
     })
 } catch (e) {
     reply(errt)
-  l(e)
+  console.log(e)
 }
 })
 
@@ -327,6 +327,6 @@ try{
 
 } catch (e) {
     reply(errt)
-  l(e)
+  console.log(e)
 }
 })
