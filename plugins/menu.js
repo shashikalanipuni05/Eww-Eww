@@ -15,13 +15,16 @@ cmd({
     filename: __filename
 }, async (conn, mek, m, { from, pushname, reply }) => {
     try {
+const voice = {
+    owner:  media/media_menu.mp3 
+}
         let wm = `© 𝖰𝗎𝖾𝖾𝗇 𝗄𝖾𝗇𝗓𝗂 𝗆𝖽 v${require("../package.json").version} (Test)\nsɪᴍᴘʟᴇ ᴡᴀʙᴏᴛ ᴍᴀᴅᴇ ʙʏ ᴅᴀɴᴜxᴢᴢ 🅥`
         if (os.hostname().length == 12) hostname = 'replit'
         else if (os.hostname().length == 36) hostname = 'heroku'
         else if (os.hostname().length == 8) hostname = 'koyeb'
         else hostname = os.hostname()
         let monspace = '```'
-        const MNG = `╰──╮. . . . . . .ʚ♡ɞ. . . . . . .╭──╯
+        const MNG = `╰──╮. . . . . . . .ʚ♡ɞ. . . . . . . .╭──╯
         
 👋 *ʜɪ* ${pushname} ,
 ◦ ɪ ᴀᴍ ᴀɴ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ꜱʏꜱᴛᴇᴍ ⚡ *(ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ)* ᴛʜᴀᴛ ᴄᴀɴ ʜᴇʟᴘ ᴛᴏ ᴅᴏ ꜱᴏᴍᴇᴛʜɪɴɢ, ꜱᴇᴀʀᴄʜ ᴀɴᴅ ɢᴇᴛ ᴅᴀᴛᴀ / ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴏɴʟʏ ᴛʜʀᴏᴜɢʜ *ᴡʜᴀᴛꜱᴀᴘᴘ* .🌐
@@ -60,7 +63,7 @@ cmd({
             rows.push({
                 header: '',
                 title: `${category} MENU`,
-                description: '',
+                description: `here is the ${category} menu`
                 id: `.category ${category}`
             })
         }
@@ -93,6 +96,8 @@ cmd({
             body: MNG
         }
 
+await conn.sendMessage(from, { audio: { url: voice.owner }, mimetype:  audio/mp4 , ptt: true }, { quoted: mek })
+
         return await conn.sendButtonMessage(from, buttons, m, opts)
     } catch (e) {
         reply('*Error !!*')
@@ -108,7 +113,7 @@ cmd({
     try {
         let wm = '*Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ2 ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀ ʙᴏᴛ*\n*ᴄʀᴇᴀᴛᴇᴅ ʙʏ • ᴅᴀɴᴜxᴢᴢ*'
         const category = q.trim().toUpperCase();
-        let commandList = `*㊂ ${category} Command List:*\n\n`;
+        let commandList = `*𝄠 ${category} Command List:*\n\n`;
 
         for (let i = 0; i < commands.length; i++) {
             const cmd = commands[i];
@@ -117,7 +122,7 @@ cmd({
             }
         }
 
-        commandList += `\n✦ *Total Commands in ${category}*: ${commands.filter(cmd => cmd.category.toUpperCase() === category).length}\n\n${wm}`
+        commandList += `\n⭓ *Total Commands in ${category}*: ${commands.filter(cmd => cmd.category.toUpperCase() === category).length}\n\n${wm}`
 
         //await conn.sendMessage(from, { text: commandList }, { quoted: mek });
         await conn.sendMessage(from, {
