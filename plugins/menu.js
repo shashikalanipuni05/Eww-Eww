@@ -16,7 +16,7 @@ cmd({
 }, async (conn, mek, m, { from, pushname, reply }) => {
     try {
 const voice = {
-    owner:  media/media_menu.mp3 
+    owner:  media/alive.mp3 
 }
         let wm = `© 𝖰𝗎𝖾𝖾𝗇 𝗄𝖾𝗇𝗓𝗂 𝗆𝖽 v${require("../package.json").version} (Test)\nsɪᴍᴘʟᴇ ᴡᴀʙᴏᴛ ᴍᴀᴅᴇ ʙʏ ᴅᴀɴᴜxᴢᴢ 🅥`
         if (os.hostname().length == 12) hostname = 'replit'
