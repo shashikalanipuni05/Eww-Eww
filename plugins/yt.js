@@ -110,9 +110,13 @@ cmd({
             var result = results.videos[0]
 
          let caption = `⛈︎  *Y T - V I D E O*\n\n`
+		
          caption += `	➻  *Title* : ${result.title}\n`
+		
          caption += `	➻  *Views* : ${result.views}\n`
+		
          caption += `	➻  *Duration* : ${result.duration}\n`
+		
          caption += `	➻  *URL* : ${result.url}\n\n`
          
                  let buttons = [{
@@ -192,9 +196,13 @@ cmd({
             let wm = `© 𝖰𝗎𝖾𝖾𝗇 𝗄𝖾𝗇𝗓𝗂 𝗆𝖽 v${require("../package.json").version} (Test)\nsɪᴍᴘʟᴇ ᴡᴀʙᴏᴛ ᴍᴀᴅᴇ ʙʏ ᴅᴀɴᴜxᴢᴢ 🅥`
             var result = results.videos[0]
          let caption = `⛈︎  *Y T - S O N G*\n\n`
+		
          caption += `	➻  *Title* : ${result.title}\n`
+		
          caption += `	➻  *Views* : ${result.views}\n`
+		
          caption += `	➻  *Duration* : ${result.duration}\n`
+		
          caption += `	➻  *URL* : ${result.url}\n\n`
 
             let buttons = [
