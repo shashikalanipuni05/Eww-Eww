@@ -32,7 +32,7 @@ cmd({
     pattern: "yts",
     alias: ["ytsearch","yt"],
     use: '.yts  <query>',
-    react: "🍟",
+    react: "🔍",
     desc: 'Search videos from youtube',
     category: "search",
     filename: __filename
@@ -43,7 +43,7 @@ cmd({
         try {
             if (!q) return await reply('*Please enter a query to search!*')
             let wm = `© 𝖰𝗎𝖾𝖾𝗇 𝗄𝖾𝗇𝗓𝗂 𝗆𝖽 v${require("../package.json").version} (Test)\nsɪᴍᴘʟᴇ ᴡᴀʙᴏᴛ ᴍᴀᴅᴇ ʙʏ ᴅᴀɴᴜxᴢᴢ 🅥`
-            const msg = `乂 Y T - S E A R C H `
+            const msg = `⛈︎ Y T - S E A R C H `
             let yt = await (await yts(q)).all
             var sections = []
    yt.filter(p => p.type == 'video').map(async (v, i) => {
@@ -73,8 +73,8 @@ cmd({
            name: "cta_url",
            buttonParamsJson: JSON.stringify({
              display_text: 'Join Our Channel',
-             url: `https://whatsapp.com/channel/0029Vaa1t6l5q08V1jdCS33q`,
-             merchant_url: `https://whatsapp.com/channel/0029Vaa1t6l5q08V1jdCS33q`
+             url: `https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34`,
+             merchant_url: `https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34`
             }),
            }
         ]
@@ -95,7 +95,7 @@ cmd({
     pattern: "video",
     alias: ["ytv","ytmp4"],
     use: '.video  <video name>',
-    react: "🍟",
+    react: "📺",
     desc: 'Download videos from youtube',
     category: "download",
     filename: __filename
@@ -109,18 +109,18 @@ cmd({
             var results = await yts(url);
             var result = results.videos[0]
 
-         let caption = `乂  *Y T - V I D E O*\n\n`
-         caption += `	◦  *Title* : ${result.title}\n`
-         caption += `	◦  *Views* : ${result.views}\n`
-         caption += `	◦  *Duration* : ${result.duration}\n`
-         caption += `	◦  *URL* : ${result.url}\n\n`
+         let caption = `⛈︎  *Y T - V I D E O*\n\n`
+         caption += `	➻  *Title* : ${result.title}\n`
+         caption += `	➻  *Views* : ${result.views}\n`
+         caption += `	➻  *Duration* : ${result.duration}\n`
+         caption += `	➻  *URL* : ${result.url}\n\n`
          
                  let buttons = [{
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
                         display_text: 'Follow Our Channel',
-                        url: `https://whatsapp.com/channel/0029Vaa1t6l5q08V1jdCS33q`,
-                        merchant_url: `https://whatsapp.com/channel/0029Vaa1t6l5q08V1jdCS33q`
+                        url: `https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34`,
+                        merchant_url: `https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34`
                     }),
                 },
                 { name: 'single_select',
@@ -177,7 +177,7 @@ cmd({
     pattern: "song",
     alias: ["ytmp3","play"],
     use: '.song lelena',
-    react: "🍟",
+    react: "🎶",
     desc: 'Download audios from youtube',
     category: "download",
     filename: __filename
@@ -191,11 +191,11 @@ cmd({
             var results = await yts(url);
             let wm = `© 𝖰𝗎𝖾𝖾𝗇 𝗄𝖾𝗇𝗓𝗂 𝗆𝖽 v${require("../package.json").version} (Test)\nsɪᴍᴘʟᴇ ᴡᴀʙᴏᴛ ᴍᴀᴅᴇ ʙʏ ᴅᴀɴᴜxᴢᴢ 🅥`
             var result = results.videos[0]
-         let caption = `乂  *Y T - S O N G*\n\n`
-         caption += `	◦  *Title* : ${result.title}\n`
-         caption += `	◦  *Views* : ${result.views}\n`
-         caption += `	◦  *Duration* : ${result.duration}\n`
-         caption += `	◦  *URL* : ${result.url}\n\n`
+         let caption = `⛈︎  *Y T - S O N G*\n\n`
+         caption += `	➻  *Title* : ${result.title}\n`
+         caption += `	➻  *Views* : ${result.views}\n`
+         caption += `	➻  *Duration* : ${result.duration}\n`
+         caption += `	➻  *URL* : ${result.url}\n\n`
 
             let buttons = [
             {
