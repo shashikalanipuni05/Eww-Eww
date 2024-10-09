@@ -19,7 +19,7 @@ sɪᴍᴘʟᴇ ᴡᴀʙᴏᴛ ᴍᴀᴅᴇ ʙʏ ᴅᴀɴᴜxᴢᴢ 🅥`
 
 cmd({
     pattern: "sc",
-    react: "🌠",
+    react: "💸",
     alias: ["scrot"],
     desc: "Check bot is alive or die",
     category: "main",
@@ -35,25 +35,22 @@ try{
         let monspace = '```'
         
             const msg = `
-want to buy Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ2 bot script..
+> *👋. *HEY* *${pushname}* ジ,
+
+_____________________________
+_____________________________
+_____________________________
+
+*WHAT THE FUCK GUY* 😂
+
+*_WE DON'T GIVE SCRIPT_*
+_____________________________
+_____________________________
+_____________________________
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-not selling fucker Eww Eww 😂👻
+*°⏰ [  𝗕𝗬  © Ｄａｒｋ < | | > Ｎｅｏｎ Ｃｙｂｅｒｚ ヤ • 🎉 ]*
 
 ${wm} 
 `
