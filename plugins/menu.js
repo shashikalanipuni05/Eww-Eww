@@ -117,7 +117,7 @@ cmd({
             }
         }
 
-        commandList += `\n⭓ *Total Commands in ${category}*: ${commands.filter(cmd => cmd.category.toUpperCase() === category).length}\n\n${wm}`
+        commandList += `\n✦ *Total Commands in ${category}*: ${commands.filter(cmd => cmd.category.toUpperCase() === category).length}\n\n${wm}`
 
         //await conn.sendMessage(from, { text: commandList }, { quoted: mek });
         await conn.sendMessage(from, {
