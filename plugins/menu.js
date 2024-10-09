@@ -29,9 +29,16 @@ cmd({
 > *ɴᴀᴍᴇ ʙᴏᴛ* : Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ2
 > *ᴠᴇʀsɪᴏɴs* : ${require("../package.json").version}
 > *ᴛʏᴘᴇ sᴄʀɪᴘᴛ* : ᴘʟᴜɢɪɴs
-> *Memory:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-> *Runtime:* ${runtime(process.uptime())}
-> *Platform:* ${hostname}`
+> *ᴍᴇᴍᴏʀʏ:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+> *ʀᴜɴᴛɪᴍᴇ:* ${runtime(process.uptime())}
+> *ᴘʟᴀᴛꜰᴏʀᴍ:* ${hostname}
+
+*ʜɪ 💗, ʙᴇғᴏʀᴇ ɢᴏɪɴɢ ᴛᴏ ᴛʜᴇ ғᴇᴀᴛᴜʀᴇs ᴍᴇɴᴜ 📁, ᴘʟᴇᴀsᴇ ʀᴇᴀᴅ ᴛʜᴇ ʀᴜʟᴇs ғᴏʀ ᴜsɪɴɢ ᴛʜᴇ ʙᴏᴛ* 💠
+
+*🚫𝟷. sᴘᴀᴍ ʙᴏᴛs ᴀʀᴇ ᴘʀᴏʜɪʙɪᴛᴇᴅ.❕*
+*⛔𝟸. ᴄᴀʟʟɪɴɢ ʙᴏᴛs ɪs ᴘʀᴏʜɪʙɪᴛᴇᴅ.❕*
+*🚫𝟹. ᴄᴀʟʟɪɴɢ ᴏᴡɴᴇʀ ɴᴜᴍʙᴇʀ ɪs ᴘʀᴏʜɪʙɪᴛᴇᴅ.❕*
+*⛔𝟺. sᴘᴀᴍ ᴛᴏ ɴᴏ ᴏᴡɴᴇʀ ɪs ᴘʀᴏʜɪʙɪᴛᴇᴅ.❕*`
 
         const categories = [];
         const categoryMap = new Map();
@@ -101,7 +108,7 @@ cmd({
     try {
         let wm = '*Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ2 ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀ ʙᴏᴛ*\n*ᴄʀᴇᴀᴛᴇᴅ ʙʏ • ᴅᴀɴᴜxᴢᴢ*'
         const category = q.trim().toUpperCase();
-        let commandList = `*〄》 ${category} Command List:*\n\n`;
+        let commandList = `*𝄠 ${category} Command List:*\n\n`;
 
         for (let i = 0; i < commands.length; i++) {
             const cmd = commands[i];
@@ -110,7 +117,7 @@ cmd({
             }
         }
 
-        commandList += `\n》⌲ *Total Commands In ${category}*: ${commands.filter(cmd => cmd.category.toUpperCase() === category).length}\n\n${wm}`
+        commandList += `\n⭓ *Total Commands in ${category}*: ${commands.filter(cmd => cmd.category.toUpperCase() === category).length}\n\n${wm}`
 
         //await conn.sendMessage(from, { text: commandList }, { quoted: mek });
         await conn.sendMessage(from, {
