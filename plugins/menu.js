@@ -24,7 +24,7 @@ const voice = {
         else if (os.hostname().length == 8) hostname = 'koyeb'
         else hostname = os.hostname()
         let monspace = '```'
-        const MNG = `╰──╮. . . . . . . .ʚ♡ɞ. . . . . . . .╭──╯
+        const MNG = `╰──╮. . . . . . . . .ʚ♡ɞ. . . . . . . . .╭──╯
         
 👋 *ʜɪ* ${pushname} ,
 ◦ ɪ ᴀᴍ ᴀɴ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ꜱʏꜱᴛᴇᴍ ⚡ *(ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ)* ᴛʜᴀᴛ ᴄᴀɴ ʜᴇʟᴘ ᴛᴏ ᴅᴏ ꜱᴏᴍᴇᴛʜɪɴɢ, ꜱᴇᴀʀᴄʜ ᴀɴᴅ ɢᴇᴛ ᴅᴀᴛᴀ / ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴏɴʟʏ ᴛʜʀᴏᴜɢʜ *ᴡʜᴀᴛꜱᴀᴘᴘ* .🌐
