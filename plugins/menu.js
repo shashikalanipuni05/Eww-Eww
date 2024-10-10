@@ -15,16 +15,13 @@ cmd({
     filename: __filename
 }, async (conn, mek, m, { from, pushname, reply }) => {
     try {
-const voice = {
-    owner:  media/alive.mp3 
-}
         let wm = `© 𝖰𝗎𝖾𝖾𝗇 𝗄𝖾𝗇𝗓𝗂 𝗆𝖽 v${require("../package.json").version} (Test)\nsɪᴍᴘʟᴇ ᴡᴀʙᴏᴛ ᴍᴀᴅᴇ ʙʏ ᴅᴀɴᴜxᴢᴢ 🅥`
         if (os.hostname().length == 12) hostname = 'replit'
         else if (os.hostname().length == 36) hostname = 'heroku'
         else if (os.hostname().length == 8) hostname = 'koyeb'
         else hostname = os.hostname()
         let monspace = '```'
-        const MNG = `╰──╮. . . . . . . . .ʚ♡ɞ. . . . . . . . .╭──╯
+        const MNG = `╰──╮. . . . . . .ʚ♡ɞ. . . . . . .╭──╯
         
 👋 *ʜɪ* ${pushname} ,
 ◦ ɪ ᴀᴍ ᴀɴ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ꜱʏꜱᴛᴇᴍ ⚡ *(ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ)* ᴛʜᴀᴛ ᴄᴀɴ ʜᴇʟᴘ ᴛᴏ ᴅᴏ ꜱᴏᴍᴇᴛʜɪɴɢ, ꜱᴇᴀʀᴄʜ ᴀɴᴅ ɢᴇᴛ ᴅᴀᴛᴀ / ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴏɴʟʏ ᴛʜʀᴏᴜɢʜ *ᴡʜᴀᴛꜱᴀᴘᴘ* .🌐
@@ -63,7 +60,7 @@ const voice = {
             rows.push({
                 header: '',
                 title: `${category} MENU`,
-                description: `here is the ${category} menu`
+                description: '',
                 id: `.category ${category}`
             })
         }
@@ -71,7 +68,7 @@ const voice = {
         let buttons = [{
                 name: "cta_url",
                 buttonParamsJson: JSON.stringify({
-                    display_text: 'Follow Our Channel',
+                    display_text: 'Follow Us',
                     url: `https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34`,
                     merchant_url: `https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34`
                 }),
@@ -79,7 +76,7 @@ const voice = {
             {
                 name: "single_select",
                 buttonParamsJson: JSON.stringify({
-                    title: 'Select a Category ⚙️',
+                    title: 'Select a Category :⚙️',
                     sections: [{
                         title: 'Please select a category',
                         highlight_label: 'Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ2',
@@ -95,8 +92,6 @@ const voice = {
             footer: wm,
             body: MNG
         }
-
-await conn.sendMessage(from, { audio: { url: voice.owner }, mimetype:  audio/mp4 , ptt: true }, { quoted: mek })
 
         return await conn.sendButtonMessage(from, buttons, m, opts)
     } catch (e) {
