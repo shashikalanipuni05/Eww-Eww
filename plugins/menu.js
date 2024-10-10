@@ -21,24 +21,38 @@ cmd({
         else if (os.hostname().length == 8) hostname = 'koyeb'
         else hostname = os.hostname()
         let monspace = '```'
-        const MNG = `╰──╮. . . . . . .ʚ♡ɞ. . . . . . .╭──╯
-        
-👋 *ʜɪ* ${pushname} ,
-◦ ɪ ᴀᴍ ᴀɴ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ꜱʏꜱᴛᴇᴍ ⚡ *(ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ)* ᴛʜᴀᴛ ᴄᴀɴ ʜᴇʟᴘ ᴛᴏ ᴅᴏ ꜱᴏᴍᴇᴛʜɪɴɢ, ꜱᴇᴀʀᴄʜ ᴀɴᴅ ɢᴇᴛ ᴅᴀᴛᴀ / ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴏɴʟʏ ᴛʜʀᴏᴜɢʜ *ᴡʜᴀᴛꜱᴀᴘᴘ* .🌐
+        const MNG = `👋 *Hey ${pushname}!* 🍃
+Welcome to Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ2, bot WhatsApp is ready to help you!
 
-> *ɴᴀᴍᴇ ʙᴏᴛ* : Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ2
-> *ᴠᴇʀsɪᴏɴs* : ${require("../package.json").version}
-> *ᴛʏᴘᴇ sᴄʀɪᴘᴛ* : ᴘʟᴜɢɪɴs
-> *ᴍᴇᴍᴏʀʏ:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-> *ʀᴜɴᴛɪᴍᴇ:* ${runtime(process.uptime())}
-> *ᴘʟᴀᴛꜰᴏʀᴍ:* ${hostname}
+_____________________________________
+
+😼ＫＥＮＺＩ-ＭＤ🤗
+
+> Hey 💠 This Is Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ2 MENU 💗
 
 *ʜɪ 💗, ʙᴇғᴏʀᴇ ɢᴏɪɴɢ ᴛᴏ ᴛʜᴇ ғᴇᴀᴛᴜʀᴇs ᴍᴇɴᴜ 📁, ᴘʟᴇᴀsᴇ ʀᴇᴀᴅ ᴛʜᴇ ʀᴜʟᴇs ғᴏʀ ᴜsɪɴɢ ᴛʜᴇ ʙᴏᴛ* 💠
 
 *🚫𝟷. sᴘᴀᴍ ʙᴏᴛs ᴀʀᴇ ᴘʀᴏʜɪʙɪᴛᴇᴅ.❕*
 *⛔𝟸. ᴄᴀʟʟɪɴɢ ʙᴏᴛs ɪs ᴘʀᴏʜɪʙɪᴛᴇᴅ.❕*
 *🚫𝟹. ᴄᴀʟʟɪɴɢ ᴏᴡɴᴇʀ ɴᴜᴍʙᴇʀ ɪs ᴘʀᴏʜɪʙɪᴛᴇᴅ.❕*
-*⛔𝟺. sᴘᴀᴍ ᴛᴏ ɴᴏ ᴏᴡɴᴇʀ ɪs ᴘʀᴏʜɪʙɪᴛᴇᴅ.❕*`
+*⛔𝟺. sᴘᴀᴍ ᴛᴏ ɴᴏ ᴏᴡɴᴇʀ ɪs ᴘʀᴏʜɪʙɪᴛᴇᴅ.❕*
+_____________________________________
+
+┌─ 📊 *DASHBOARD* ─┐
+│
+├─ 🩵 *User*: ${pushname}
+├─ 🩵 *Mode*: Public
+│
+├─ 🤖 *INFO BOT* ─┐
+│
+├─ 🤍 *ɴᴀᴍᴇ ʙᴏᴛ*: Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ2
+├─ 🤍 *ᴘʟᴀᴛꜰᴏʀᴍ:* ${hostname}
+├─ 🤍 *ᴛʏᴘᴇ sᴄʀɪᴘᴛ* : ᴘʟᴜɢɪɴs
+├─ 🤍 *ʀᴜɴᴛɪᴍᴇ:* ${runtime(process.uptime())}
+├─ 🤍 *ᴍᴇᴍᴏʀʏ:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+└─ 🤍 *ᴠᴇʀsɪᴏɴs* : ${require("../package.json").version}
+│
+└─ 💐 Thank you for using *Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ2* ! 🌟`
 
         const categories = [];
         const categoryMap = new Map();
