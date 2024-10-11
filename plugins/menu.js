@@ -26,13 +26,13 @@ cmd({
             else if (os.hostname().length == 8) hostname = 'koyeb'
             else hostname = os.hostname()
             let monspace = '```'
-            const sssf = `${monspace}💗 Hello ${pushname} I'm alive now${monspace}
+            const sssf = `${monspace}🤍 Hello ${pushname} I'm alive now${monspace}
 
 *😼ＫＥＮＺＩ-ＭＤ🤍*
     
-> *ɴᴀᴍᴇ ʙᴏᴛ* : Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ2
-> *ᴠᴇʀsɪᴏɴs* : ${require("../package.json").version}
-> *ᴛʏᴘᴇ sᴄʀɪᴘᴛ* : ᴘʟᴜɢɪɴs
+> *Name Bot* : Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ2
+> *Versions* : ${require("../package.json").version}
+> *Type Script* : ᴘʟᴜɢɪɴs
 > *Memory:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 > *Runtime:* ${runtime(process.uptime())}
 > *Platform:* ${hostname}`
