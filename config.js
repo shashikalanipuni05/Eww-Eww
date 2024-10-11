@@ -17,5 +17,6 @@ FOOTER: process.env.FOOTER=== undefined ? 'Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ
 MAX_SIZE: process.env.MAX_SIZE === undefined ? '1500': process.env.MAX_SIZE,
 LOGO: process.env.LOGO === undefined ? `https://telegra.ph/file/f25fa1b13e9962f2c2271.jpg` : process.env.LOGO,
 ANTI_DELETE : process.env.ANTI_DELETE === undefined ? 'true' : process.env.ANTI_DELETE,
-DELETEMSGSENDTO : process.env.DELETEMSGSENDTO === undefined ? '94774500937' : process.env.DELETEMSGSENDTO
+DELETEMSGSENDTO : process.env.DELETEMSGSENDTO === undefined ? '94774500937' : process.env.DELETEMSGSENDTO,
+LOGO: process.env.LOGO === undefined ? 'sadas.jpeg': process.env.LOGO
 }
