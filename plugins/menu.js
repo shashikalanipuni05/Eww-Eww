@@ -6,12 +6,12 @@ const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, 
 let cap = '*Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ2 ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀ ʙᴏᴛ*\n*ᴄʀᴇᴀᴛᴇᴅ ʙʏ • ᴅᴀɴᴜxᴢᴢ*'
 //=====================================================================================
 cmd({
-        pattern: "alive",
-        react: "👻",
+        pattern: "rules",
+        react: "🗿",
         alias: ["online", "test", "bot"],
-        desc: "Check bot online or no.",
+        desc: "Check bot rules.",
         category: "other",
-        use: '.alive',
+        use: '.rules',
         filename: __filename
     },
     async (conn, mek, m, {
@@ -26,16 +26,37 @@ cmd({
             else if (os.hostname().length == 8) hostname = 'koyeb'
             else hostname = os.hostname()
             let monspace = '```'
-            const sssf = `${monspace}🤍 Hello ${pushname} I'm alive now${monspace}
+            const sssf = `┏━━━°❀ ❬ *Rules Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ2 MultiDevice* ❭ ❀°━━━┓
 
-*😼ＫＥＮＺＩ-ＭＤ🤍*
+1. ✧ *Spamming Bots is Prohibited*, If Caught You Will Be Banned.
+
+2. ✧ If the Bot Doesn't Answer 1x, Please Try Again. But If the Bot Doesn't Answer 2x, That Means Delay, Don't Use It First.
+
+3. ✧ *Don't Spam Bots, If You Haven't Donated, Just Be Aware of Using It* :)
+
+4. ✧ If the Limit Runs Out, Please Play Games to Get Exp. Example Games: Guessing Games, RPG Games, etc.
+
+5. ✧ *Sending Virtex/Bugs to Bots is Prohibited*, Even Though It Has No Effect :v
+
+6. ✧ *Call Bots Are Strictly Prohibited*, If You Call You Will Be Automatically Blocked.
+
+7. ✧ If You Don't Understand How to Use Bots, Please Ask Other Members. Or If You Haven't Joined the Bot Group, Type #gcbot and Enter the Bot Group.
+
+ 8. ✧ If There is an Error Feature/Do Not Understand How to Use It, Please Report/Ask the Owner.
+
+9. ✧ If the Bot Delays, Do Not Spam It First.
+
+10. ✧ For *Premium* Users, *It is Strictly Prohibited to Send Original Bugs to Others*.
+
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
     
 > *Name Bot* : Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ2
 > *Versions* : ${require("../package.json").version}
 > *Type Script* : ᴘʟᴜɢɪɴs
 > *Memory:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 > *Runtime:* ${runtime(process.uptime())}
-> *Platform:* ${hostname}`
+> *Platform:* ${hostname}
+____________________________________________`
 
             let buttons = [{
                     name: "cta_url",
@@ -48,8 +69,8 @@ cmd({
                 {
                     name: "quick_reply",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "𝐊𝐄𝐍𝐙𝐈 𝐌𝐄𝐍𝐔 📑",
-                        id: ".menu"
+                        display_text: "𝐐𝐔𝐄𝐄𝐍 𝐊𝐄𝐍𝐙𝐈 𝐌𝐃 💗",
+                        id: ".alive"
                     }),
                 }
             ]
@@ -273,10 +294,17 @@ _____________________________________
         let buttons = [{
                 name: "cta_url",
                 buttonParamsJson: JSON.stringify({
-                    display_text: '𝙸𝙽𝙵𝙾 𝙺𝙴𝙽𝚉𝙸-𝙼𝙳 🔍',
+                    display_text: '𝙸𝙽𝙵𝙾-𝙺𝙴𝙽𝚉𝙸-𝙼𝙳 🔍',
                     url: `https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34`,
                     merchant_url: `https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34`
                 }),
+                  },
+                  {
+          name: "quick_reply",
+          buttonParamsJson: JSON.stringify({
+              display_text: "𝐑𝐔𝐋𝐄𝐒 🗿",
+              id: ".rules"
+          }),
             },
             {
                 name: "single_select",
