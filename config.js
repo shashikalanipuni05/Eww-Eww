@@ -9,6 +9,7 @@ ONLY_GROUP: process.env.ONLY_GROUP === undefined ? 'false' : process.env.ONLY_GR
 ONLY_ME: process.env.ONLY_ME === undefined ? 'false' : process.env.ONLY_ME,
 STATUS_VIEW: process.env.STATUS_VIEW === undefined ? 'true' : process.env.STATUS_VIEW,
 ALWAYS_ONLINE: process.env.ADDRESSES === undefined ? 'false' : process.env.ADDRESSES,
+OMDB_API_KEY: process.env.OMDB_API_KEY || "76cb7f39",
 AUTO_TYPING: process.env.AUTO_TYPING === undefined ? 'false' : process.env.AUTO_TYPING,
 AUTO_RECORDING: process.env.AUTO_RECORDING === undefined ? 'true' : process.env.AUTO_RECORDING,
 ALIVE: process.env.ALIVE === undefined ? `Hello im alive now !!` : process.env.ALIVE,
