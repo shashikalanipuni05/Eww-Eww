@@ -66,6 +66,135 @@ cmd({
             console.log(e)
         }
     })
+    
+    cmd({
+        pattern: "animes",
+        react: "😽",
+        alias: ["status"],
+        desc: "Check bot system status.",
+        category: "other",
+        use: '.animes',
+        filename: __filename
+    },
+    async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants,  isItzcp, groupAdmins, isBotAdmins, isAdmins, reply,react}) => {
+    try{
+        
+    
+    const rtime = await runtime(process.uptime())
+    
+    const txt =`🪙Command : anime
+📝Desc : You can get Anime images.
+☘Use: .anime
+
+🪙Command : animeeg
+📝Desc : You Can search Animes.
+☘Use: .animeeg
+
+🪙Command : loli
+📝Desc : Anime cmd.
+☘Use: .loli
+
+🪙Command : waifu
+📝Desc : Anime cmd.
+☘Use: .waifu
+
+🪙Command : neko
+📝Desc : Anime cmd.
+☘Use: .neko
+
+🪙Command : megumin
+📝Desc : Anime cmd.
+☘Use: .megumin
+
+🪙Command : maid
+📝Desc : Anime cmd.
+☘Use: .maid
+
+🪙Command : awoo
+📝Desc : Anime cmd.
+☘Use: .awoo
+
+🪙Command : anime1
+📝Desc : Anime cmd.
+☘Use: .anime1
+
+🪙Command : anime2
+📝Desc : Anime cmd.
+☘Use: .anime2
+
+🪙Command : anime3
+📝Desc : Anime cmd.
+☘Use: .anime3
+
+🪙Command : anime4
+📝Desc : Anime cmd.
+☘Use: .anime4
+
+🪙Command : anime5
+📝Desc : Anime cmd.
+☘Use: .anime5
+
+🪙Command : nsfw1
+📝Desc : Anime cmd.
+☘Use: .nsfw1
+
+🪙Command : nsfw2
+📝Desc : Anime cmd.
+☘Use: .nsfw2
+
+🪙Command : nsfw3
+📝Desc : Anime cmd.
+☘Use: .nsfw3
+
+🪙Command : nsfw4
+📝Desc : Anime cmd.
+☘Use: .nsfw4
+
+🪙Command : nsfw5
+📝Desc : Anime cmd.
+☘Use: .nsfw5`
+    
+    let buttons = [
+      {
+          name: "quick_reply",
+          buttonParamsJson: JSON.stringify({
+              display_text: "PING",
+              id: ".ping"
+          }),
+      },
+      {
+        name: "quick_reply",
+        buttonParamsJson: JSON.stringify({
+            display_text: "SYSTEM",
+            id: ".cpu"
+        }),
+    },
+
+    
+    ]
+    
+    let message = {
+        image: config.LOGO,
+      header: '',
+      footer: config.FOOTER,
+      
+    
+    
+      body: txt
+    
+    }
+    
+    
+    
+    
+    
+    
+    return await conn.sendButtonMessage(from, buttons, m, message)
+    } catch (e) {
+        reply('*Error !!*')
+        console.log(e)
+    }
+    })
 
 cmd({
     pattern: "menu",
