@@ -281,7 +281,7 @@ _____________________________________
             {
                 name: "single_select",
                 buttonParamsJson: JSON.stringify({
-                    title: '𝐁𝐎𝐓-𝐂𝐀𝐓𝐄𝐆𝐎𝐑𝐘 🩵',
+                    title: '𝐁𝐎𝐓-𝐂𝐀𝐓𝐄𝐆𝐎𝐑𝐘 🥵',
                     sections: [{
                         title: 'Please select a category',
                         highlight_label: 'Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ2',
