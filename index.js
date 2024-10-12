@@ -178,7 +178,20 @@ renderLargerThumbnail: true
                 //await conn.sendPresenceUpdate('recording', mek.key.remoteJid)
 		conn.sendPresenceUpdate('recording', mek.key.remoteJid)
             }
-	
+            
+//=======AutoVoice=========
+if (config.AUTO_VOICE === 'true') {
+const url = 'https://raw.githubusercontent.com/manulking/MANU/main/KING/MANUl-KING'
+let { data } = await axios.get(url)
+for (vr in data){
+if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { url : data[vr]},mimetype: 'audio/mpeg',ptt:true},{quoted:mek})   
+ }}
+ 
+        if (config.AUTO_BIO === 'true'){
+               await
+conn.updateProfileStatus(`💃𝐐𝐔𝐄𝐄𝐍 𝐊𝐄𝐍𝐙𝐈 𝐌𝐃 🤍  ${runtime(process.uptime())}`).catch(_ => _)
+
+            }	
             const m = sms(conn, mek)
             const type = getContentType(mek.message)
             const content = JSON.stringify(mek.message)
