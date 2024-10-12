@@ -48,7 +48,7 @@ cmd({
                 {
                     name: "quick_reply",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "Get Menu",
+                        display_text: "𝐊𝐄𝐍𝐙𝐈 𝐌𝐄𝐍𝐔 📑",
                         id: ".menu"
                     }),
                 }
@@ -158,14 +158,14 @@ cmd({
       {
           name: "quick_reply",
           buttonParamsJson: JSON.stringify({
-              display_text: "PING",
+              display_text: "PING 🧬",
               id: ".ping"
           }),
       },
       {
         name: "quick_reply",
         buttonParamsJson: JSON.stringify({
-            display_text: "SYSTEM",
+            display_text: "SYSTEM ⛓️",
             id: ".cpu"
         }),
     },
@@ -273,7 +273,7 @@ _____________________________________
         let buttons = [{
                 name: "cta_url",
                 buttonParamsJson: JSON.stringify({
-                    display_text: 'Follow Us',
+                    display_text: '𝙸𝙽𝙵𝙾-𝙺𝙴𝙽𝚉𝙸-𝙼𝙳 🔍',
                     url: `https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34`,
                     merchant_url: `https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34`
                 }),
@@ -281,7 +281,7 @@ _____________________________________
             {
                 name: "single_select",
                 buttonParamsJson: JSON.stringify({
-                    title: 'Select a Category :⚙️',
+                    title: '𝐁𝐎𝐓-𝐂𝐀𝐓𝐄𝐆𝐎𝐑𝐘 🩵',
                     sections: [{
                         title: 'Please select a category',
                         highlight_label: 'Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ2',
