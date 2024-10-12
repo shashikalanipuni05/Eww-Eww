@@ -241,15 +241,71 @@ ____________________________________________`
       {
           name: "quick_reply",
           buttonParamsJson: JSON.stringify({
-              display_text: "PING 🧬",
-              id: ".ping"
+              display_text: "ΛПIMΣ 1 💗",
+              id: ".anime1"
+          }),
+      },
+      {
+          name: "quick_reply",
+          buttonParamsJson: JSON.stringify({
+              display_text: "ΛПIMΣ 2 💗",
+              id: ".anime2"
+          }),
+      },
+      {
+          name: "quick_reply",
+          buttonParamsJson: JSON.stringify({
+              display_text: "ΛПIMΣ 3 💗",
+              id: ".anime3"
+          }),
+      },
+      {
+          name: "quick_reply",
+          buttonParamsJson: JSON.stringify({
+              display_text: "ΛПIMΣ 4 💗",
+              id: ".anime4"
+          }),
+      },
+      {
+          name: "quick_reply",
+          buttonParamsJson: JSON.stringify({
+              display_text: "ΛПIMΣ 5 💗",
+              id: ".anime5"
+          }),
+      },
+      {
+          name: "quick_reply",
+          buttonParamsJson: JSON.stringify({
+              display_text: "𝑵𝒔𝒇𝒘 1 🥶",
+              id: ".nsfw1"
+          }),
+      },
+      {
+          name: "quick_reply",
+          buttonParamsJson: JSON.stringify({
+              display_text: "𝑵𝒔𝒇𝒘 2 🥶",
+              id: ".nsfw2"
+          }),
+      },
+      {
+          name: "quick_reply",
+          buttonParamsJson: JSON.stringify({
+              display_text: "𝑵𝒔𝒇𝒘 3 🥶",
+              id: ".nsfw3"
+          }),
+      },
+      {
+          name: "quick_reply",
+          buttonParamsJson: JSON.stringify({
+              display_text: "𝑵𝒔𝒇𝒘 4 🥶",
+              id: ".nsfw4"
           }),
       },
       {
         name: "quick_reply",
         buttonParamsJson: JSON.stringify({
-            display_text: "SYSTEM ⛓️",
-            id: ".cpu"
+            display_text: "𝑵𝒔𝒇𝒘 5 🥶",
+            id: ".nsfw5"
         }),
     },
 
