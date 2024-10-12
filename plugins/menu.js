@@ -273,7 +273,7 @@ _____________________________________
         let buttons = [{
                 name: "cta_url",
                 buttonParamsJson: JSON.stringify({
-                    display_text: '𝙸𝙽𝙵𝙾-𝙺𝙴𝙽𝚉𝙸-𝙼𝙳 🔍',
+                    display_text: '𝙸𝙽𝙵𝙾 𝙺𝙴𝙽𝚉𝙸-𝙼𝙳 🔍',
                     url: `https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34`,
                     merchant_url: `https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34`
                 }),
