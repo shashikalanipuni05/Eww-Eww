@@ -6,6 +6,82 @@ const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, 
 let cap = '*Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ2 ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀ ʙᴏᴛ*\n*ᴄʀᴇᴀᴛᴇᴅ ʙʏ • ᴅᴀɴᴜxᴢᴢ*'
 //=====================================================================================
 cmd({
+        pattern: "owner",
+        react: "🩸",
+        alias: ["status"],
+        desc: "Check bot owner cmd.",
+        category: "other",
+        use: '.owner',
+        filename: __filename
+    },
+    async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants,  isItzcp, groupAdmins, isBotAdmins, isAdmins, reply,react}) => {
+    try{
+        
+    
+    const rtime = await runtime(process.uptime())
+    
+    const txt =`> *👋. *HEY* *${pushname}* ジ,
+_________________________
+
+🍫 ∆ ◦ _*ɴᴀᴍᴇ ʙᴏᴛ*_ : 💃𝐐𝐔𝐄𝐄𝐍 𝐊𝐄𝐍𝐙𝐈 𝐌𝐃 🤍
+__________________________________________________________
+
+🌜 ∆ ◦ _*ᴄʀᴇᴀᴛᴏʀ*_ : *DanuXzz* ジ 🤍
+> Ｄａｒｋ Ｎｅｏｎ Ｃｙｂｅｒｚ 🅥
+__________________________________________________________
+
+👻 ∆ ◦ _*ᴠᴇʀsɪᴏɴs*_ : 2.0.0 ( *ᴀᴅᴅᴇᴅ ʜɪᴅᴅᴇɴ ғᴇᴀᴜᴛᴜʀᴇs* )🤍
+__________________________________________________________
+
+🧩 ∆ ◦ _*ᴛʏᴘᴇ sᴄʀɪᴘᴛ*_ : *ᴘʟᴜɢɪɴs* 🤍
+__________________________________________________________
+
+♟️ ∆ ◦ _*ᴊᴏɪɴ ᴍʏ ɢʀᴏᴜᴘ*_ :  ~https://whatsapp.com/channel/0029Va8f3smKWEKvPUzXQv34~  🤍
+__________________________________________________________
+
+🖲️ ∆ ◦ _*ᴄᴏɴᴛᴀᴄᴛ*_ : ~https://wa.me/94740460412~ 🤍         
+_________________________
+
+*OWNER IS SLEEPING DON'T DISTURB* 🤫
+
+*°⏰ [  𝗕𝗬  © Ｄａｒｋ < | | > Ｎｅｏｎ Ｃｙｂｅｒｚ ヤ • 🎉 ]*`
+    
+    let buttons = [{
+                name: "cta_url",
+                buttonParamsJson: JSON.stringify({
+                    display_text: '𝙲𝙾𝙽𝚃𝙰𝙲𝚃-𝙾𝚆𝙽𝙴𝚁 🤭',
+                    url: `https://wa.me/94774500937?text=*Hi_DANU_XZ🥵⃟💥⃝☙*`,
+                    merchant_url: `https://wa.me/94774500937?text=*Hi_DANU_XZ🥵⃟💥⃝☙*`
+          }),
+      },
+
+    
+    ]
+    
+    let message = {
+        image: config.LOGO,
+      header: '',
+      footer: config.FOOTER,
+      
+    
+    
+      body: txt
+    
+    }
+    
+    
+    
+    
+    
+    
+    return await conn.sendButtonMessage(from, buttons, m, message)
+    } catch (e) {
+        reply('*Error !!*')
+        console.log(e)
+    }
+    })
+    
+cmd({
         pattern: "alive",
         react: "👻",
         alias: ["online", "test", "bot"],
@@ -422,6 +498,13 @@ _____________________________________
           buttonParamsJson: JSON.stringify({
               display_text: "𝐑𝐔𝐋𝐄𝐒 🗿",
               id: ".rules"
+          }),
+            },
+            {
+          name: "quick_reply",
+          buttonParamsJson: JSON.stringify({
+              display_text: "𝐎𝐖𝐍𝐄𝐑 👤",
+              id: ".owner"
           }),
             },
             {
