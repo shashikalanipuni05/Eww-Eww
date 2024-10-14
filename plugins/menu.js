@@ -542,16 +542,16 @@ cmd({
     try {
         let wm = '*Qᴜᴇᴇɴ-ᴋᴇɴᴢɪ ᴍᴅ ᴠ2 ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀ ʙᴏᴛ*\n*ᴄʀᴇᴀᴛᴇᴅ ʙʏ • ᴅᴀɴᴜxᴢᴢ*'
         const category = q.trim().toUpperCase();
-        let commandList = `*㊂ ${category} Command List:*\n\n`;
+        let commandList = `*࿈ ${category} ℭ𝔬𝔪𝔪𝔞𝔫𝔡 𝔏𝔦𝔰𝔱:*\n\n`;
 
         for (let i = 0; i < commands.length; i++) {
             const cmd = commands[i];
             if (cmd.category.toUpperCase() === category) {
-                commandList += ` • *${cmd.use}* \n`;
+                commandList += ` ❥ *${cmd.use}* \n`;
             }
         }
 
-        commandList += `\n✦ *Total Commands in ${category}*: ${commands.filter(cmd => cmd.category.toUpperCase() === category).length}\n\n${wm}`
+        commandList += `\n✦ *𝚃𝚘𝚝𝚊𝚕 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝚒𝚗 ${category}*: ${commands.filter(cmd => cmd.category.toUpperCase() === category).length}\n\n${wm}`
 
         //await conn.sendMessage(from, { text: commandList }, { quoted: mek });
         await conn.sendMessage(from, {
