@@ -148,6 +148,7 @@ cmd({
     desc: "Animal image.",
     react: "💗",
     category: "nsfw",
+    use: '.nsfw1',
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -173,7 +174,8 @@ cmd({
     pattern: "nsfw2",
     desc: "Animal image.",
     react: "💗",
-    category: "anime",
+    category: "nsfw",
+    use: '.nsfw2',
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -200,7 +202,8 @@ cmd({
     pattern: "nsfw3",
     desc: "Animal image.",
     react: "💗",
-    category: "anime",
+    category: "nsfw",
+    use: '.nsfw3',
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -227,7 +230,8 @@ cmd({
     pattern: "nsfw4",
     desc: "Animal image.",
     react: "💗",
-    category: "anime",
+    category: "nsfw",
+    use: '.nsfw4',
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -254,7 +258,8 @@ cmd({
     pattern: "nsfw5",
     desc: "Animal image.",
     react: "💗",
-    category: "anime",
+    category: "nsfw",
+    use: '.nsfw5',
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
