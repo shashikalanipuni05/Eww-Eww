@@ -231,7 +231,7 @@ ____________________________________________`
         react: "😽",
         alias: ["status"],
         desc: "Check bot system status.",
-        category: "other",
+        category: "anime",
         use: '.animes',
         filename: __filename
     },
