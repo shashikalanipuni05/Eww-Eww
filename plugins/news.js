@@ -12,7 +12,7 @@ cmd({
     alias: ["wabetainfo","betawa"],
     react: "✔️",
     desc: tmsg,
-    category: "search",
+    category: "news",
     use: '.wabeta',
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -52,7 +52,7 @@ cmd({
     pattern: "esana",
     react: '📰',
     desc: "To see esana news",
-    category: "search",
+    category: "news",
     use: '.esana',
     filename: __filename
 },
@@ -65,7 +65,7 @@ try{
             const res = ress.results;
 
             const txt2 = await conn.sendMessage(from, {image: 
-	    {url: res.COVER},caption: `\n┃◉⇨ 𝚃𝙸𝚃𝙻𝙴 :${res.TITLE}\n\n┃◉⇨ 𝙳𝙰𝚃𝙴 :${res.PUBLISHED}\n\n┃◉⇨ 𝚄𝚁𝙻 :${res.URL}\n\n┃◉ ⇨ 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝚃𝙸𝙾𝙽 : ${res.DESCRIPTION}\n\n*PINK-VENOM ESANA NEWS ®*\n\n`},
+	    {url: res.COVER},caption: `\n┃◉⇨ 𝚃𝙸𝚃𝙻𝙴 :${res.TITLE}\n\n┃◉⇨ 𝙳𝙰𝚃𝙴 :${res.PUBLISHED}\n\n┃◉⇨ 𝚄𝚁𝙻 :${res.URL}\n\n┃◉ ⇨ 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝚃𝙸𝙾𝙽 : ${res.DESCRIPTION}\n\n*KENZI-MD ESANA NEWS ®*\n\n`},
 			{ quoted: mek });
 await conn.sendMessage(from, { react: { text: `🗞️`, key: mek.key }}) 
 } catch (e) {
@@ -81,7 +81,7 @@ cmd({
     alias: ["apple","applenews"],
     react: "🍎",
     desc: "It gives IOS news.",
-    category: "search",
+    category: "news",
     use: '.ios',
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -106,7 +106,7 @@ cmd({
     alias: ["tech","gadgets360"],
     react: "📡",
     desc: "It gives Tech news.",
-    category: "search",
+    category: "news",
     use: '.technews',
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -131,7 +131,7 @@ cmd({
     alias: ["tvderana","derananews"],
     react: "📡",
     desc: "It gives derana news.",
-    category: "search",
+    category: "news",
     use: '.derana',
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -157,7 +157,7 @@ cmd({
     alias: ["hnews","hirunews"],
     react: "🍎",
     desc: "It gives hiru news.",
-    category: "search",
+    category: "news",
     use: '.hnews',
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
