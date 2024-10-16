@@ -26,7 +26,7 @@ cmd({
         if (!mediafireUrl.includes("mediafire.com")) return reply('*This is not a valid Mediafire URL.*');
 
         // Fetch mediafire link details (replace the API with your own or the one you trust)
-        let res = await fetchJson('https://xorizn-downloads.vercel.app/api/downloads/mediafire=' + mediafireUrl);
+        let res = await fetchJson('https://xorizn-downloads.vercel.app/api/downloads/mediafire?url=' + mediafireUrl);
 
         // Handle API response
         if (!res || !res.result) return reply('*Error fetching Mediafire link details.*');
