@@ -248,7 +248,7 @@ console.log(e)
 cmd({
     pattern: "news1",
     desc: "Get the latest news headlines.",
-    category: "other",
+    category: "news",
     react: "📰",
     use: '.news1',
     filename: __filename
